@@ -1,0 +1,17 @@
+{
+  "configContent": "import globals from "globals";
+
+
+/** @type {import('eslint').Linter.Config[]} */
+export default [
+  {languageOptions: { globals: {...globals.browser, ...globals.node} }},
+];",
+  "configFilename": "eslint.config.js",
+  "devDependencies": [
+    "eslint",
+    "globals",
+  ],
+  "installFlags": [
+    "-D",
+  ],
+}
